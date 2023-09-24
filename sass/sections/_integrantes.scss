@@ -1,0 +1,203 @@
+.integrantes-container {
+    width: 61.3%;
+    border: 1px solid rgb(0, 0, 0);
+
+    height: 98vh;
+    margin: 3px;
+    padding: 3px;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+        'uno uno'
+        'dos dos'
+    ;
+
+    .uno {
+        grid-area: uno;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+
+        img {
+            padding: 10px;
+            width: 10vw;
+        }
+
+        .uno-banner {
+            margin-top: 5px;
+            width: 45vw;
+        }
+
+        p {
+            color: red;
+            font-size: 12px;
+            text-align: right;
+            padding-right: 5px;
+        }
+    }
+
+    .dos {
+        background-color: rgb(47, 107, 122);
+        border: 1px solid black;
+        grid-area: dos;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        overflow: auto;
+        justify-content: center;
+        padding-top: 10px;
+
+        .dos-box {
+            background-color: black;
+            padding: 10px;
+            transition: transform 0.2s;
+
+            img {
+                border-bottom: 1px solid red;
+                width: 10rem;
+            }
+
+            p {
+                color: white;
+                margin: 0;
+                font-size: 17px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .edad {
+                color: red;
+                text-decoration: underline;
+                font-size: 13px;
+            }
+
+            span {
+                color: red;
+                text-decoration: underline;
+                font-size: 13px;
+            }
+        }
+
+        .dos-box:hover {
+            border: 1px solid orange;
+
+            img {
+                width: 10.5rem;
+            }
+        }
+    }
+
+    .perfil {
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        border: 1px solid red;
+        flex-direction: column;
+        width: 60.5vw;
+
+        .banner-perfil {
+            width: 96.2%;
+            height: 10vh;
+            background-color: rgb(255, 0, 0);
+            text-align: center;
+            margin: 0px 15px;
+            margin-top: 10px;
+
+            p {
+                font-size: 40px;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+        }
+
+        .info-perfil {
+            text-align: center;
+            width: 100%;
+
+            p {
+                font-size: 20px;
+                margin: 0px 4.5vw;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                color: white;
+            }
+        }
+
+        .foto-perfil {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                color: red;
+                font-size: 35px;
+                margin: 0;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            img {
+                width: 20vw;
+                border: 1px solid red;
+            }
+
+            span {
+                color: gray;
+                font-size: 13px;
+                margin-top: 3px;
+            }
+        }
+
+        .container-perfil {
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: row;
+
+            .container-img {
+                padding: 20px;
+
+                img {
+                    border: 1px solid red;
+                    height: 80vh;
+                }
+            }
+
+            .container-info {
+                margin-top: 20px;
+
+                span {
+                    color: red;
+                    font-size: 23px;
+                }
+
+                .container-info-box {
+                    border: 1px solid red;
+                    padding: 5px;
+                    width: 27vw;
+                    margin-bottom: 30px;
+                    overflow-wrap: break-word;
+                    overflow: hidden;
+
+                    p {
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+
+                .container-info-separador {
+                    margin: 10px 0px;
+                    padding-left: 2px;
+                    width: 27vw;
+                    background-color: red;
+                    color: black;
+
+                    span {
+                        font-size: 20px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+}
